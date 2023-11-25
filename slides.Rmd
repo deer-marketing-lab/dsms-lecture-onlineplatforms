@@ -20,9 +20,7 @@ class: font160
 * Explain how online retailer's variety increases consumer welfare 
 * Assess the magnitude of welfare gains due to online retail 
 * Explain differences in price dispersion online and offline
-* Evaluate whether Amazon exploits changes in market power by changing prices
-* Identify four aspects of digital paywall design 
-* Evaluate changes in paywall design on content demand and subscription behaviour
+
 
 ---
 class: font160
@@ -50,58 +48,7 @@ Price dispersion in online markets
 
 * [Aparcio, Metzman & Rigabon (2021)](https://www.nber.org/papers/w28639)
 
-Market power of large online retailers 
 
-* [He, Reimers & Shiller (2021)](https://benjaminshiller.com/pdfs/toy_paper.pdf)
-
-Digital paywall design 
-
-* [Aral and Dhillon (2021)](https://doi.org/10.1287/mnsc.2020.3650)
-
----
-# Focus on the Authors 
-
-.pull-left[
-
-```{r, echo = FALSE, fig.align = "center", out.width="80%"}
-url <- "https://imkereimers.weebly.com/uploads/2/7/9/9/2799121/published/img-8373.jpg?1639144900"
-knitr::include_graphics(url)
-```
-]
-
-.pull-right[
-**Imke Reimers**
-
-* Associate Prof at Northeastern
-* Research in Digital Markets 
-* "Econ style" but very marketing relevant
-* Digital books, online reviews, copyright
-]
-
----
-# Focus on the Authors 
-
-.pull-left[
-
-```{r, echo = FALSE, fig.align = "center", out.width="80%"}
-url <- "https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/52b5d65266d7c917ccf2dfeba2970fb58a529660_254x191.jpg?w=255"
-knitr::include_graphics(url)
-```
-```{r, echo = FALSE, fig.align = "center", out.width="50%"}
-url <- "https://media.s-bol.com/3jB0Vr9wEAwO/wjwM4l8/544x840.jpg"
-knitr::include_graphics(url)
-```
-
-]
-
-.pull-right[
-**Sinan Aral**
-
-* Professor of Management, IT, Marketing and Data Science at MIT
-* Research in Digital Markets 
-* Pioneer at the intersection of marketing, economics and social science
-* "Hype Machine" is a great (and accessibly written) book on social media
-]
 
 
 
@@ -336,240 +283,6 @@ class: font160
 * Prices **change more often online** 
 * ... And **by smaller amounts**
 
----
-class: inverse, center, middle
-
-# Market Power of the Giants
-
----
-class: font150
-# Motivation 
-
-Large **online retailers** becoming **dominant players** in consumer markets 
-
-Tradeoff: 
-
-* Reputation for **consumer friendliness** & **lower search costs**, vs 
-* Increased **market power**, **potential** to **increase prices** 
-
-**Strategic Question**: How does Amazon adjust prices when its market power increases 
-
-* Setting: Shut down of Toys R Us in the US due to bankruptcy
-
-**Why this matters?**
-
-* Anti-trust concerns (market power, abuse of dominance)
-* How do smaller companies compete?
-  * Not directly answered here
-
----
-class: font140
-# Data & Methodology
-
-**Data**: 2016-18 US and Canada,approx 200,000 products on Amazon, 40,000 are toys
-
-* Affected Products: Toys & Baby products
-* Unaffected Products: home and kitchen, electronics, pet supplies, and beauty
-* Sold by Amazon and third-party sellers on Amazon
-
-**Methods**: Triple Difference 
-
-* "Difference in the difference of differences"
-* This is Differences in Differences with an additional layer of differencing
-* Why?
-  * Essentially authors worry about what the right control group is
-
----
-# Data & Methodology
-
-* Within US Diff in Diff (across product categories):
-
-$$\ln(P_{it}) = \beta_1 Toy_i \times After_t + \gamma_i + \mu_t +\varepsilon_{it}$$
-
- .center[.font80[Are non-toys the right control group?]]
-
-* US and Canada Diff in Diff (toys only):
-
-$$\ln(P_{ict}) = \beta_1 After_t \times US_c + \phi_{it} + \psi_{ic} + \varepsilon_{ict}$$
-
- .center[.font80[Country Specific tastes, or country specific demand or supply shocks]]
-
-* Triple Diff: 
-
-$$\ln(P_{ict}) = \beta_1 US_c \times Toy_i \times After_t + \varphi_{it} + \omega_{ct} + \psi_{ic} + \varepsilon_{ict}$$
-
- .center[.font120[**Eliminates both concerns**]]
-
----
-class: font160
-# Main Result 
-
-```{r, echo = FALSE, fig.align = "center", out.width="80%"}
-url <- "figs/market_power_main.png"
-knitr::include_graphics(url)
-```
-
-* **Prices rise** by 3.1% on Amazon 
-* **Change** price **less frequently** (11.1%)
-  * $\rightarrow$ indirect evidence of less promotions
-
----
-class: font160
-# Differential Effects
-
-```{r, echo = FALSE, fig.align = "center", out.width="80%"}
-url <- "figs/market_power_heterog.png"
-knitr::include_graphics(url)
-```
-
-* Effects **concentrated** among **products sold more often**
-
----
-class: font160
-# Takeaways
-
-* Big tech firms becoming **dominant players in consumer markets** 
-
-* Evidence that when Amazon's **market power rises** (exogenously) that they **increase prices** 
-
-* **Remark**: This is exactly what economic theory predicts
-  * So its not "shocking" in any sense 
-  * But is different from the typical things anti-trust regulators go after big tech for 
-  * And might provide insight into the future as their dominant positions consolidate further
-
----
-class: inverse, center, middle
-
-# Digital Paywall Design
-
----
-class: font140
-# Motivation 
-
-**Paywalls dominate the online content publishing landscape**
-
-* Usually with a "freemium" design 
-  * Maximizing revenue by regulating subscribers 
-  * Think of a tradeoff between pure ad based revenue and subscription revenue
-
-**Why not paywall everything?** (Some publishers do)
-
-* High willingness to pay subscribers will subscribe, but
-* Reduces exposure to new customers  
-* Difficult for consumers to assess how content matches their preferences 
-
-**Why not keep (almost) everything free?** 
-
-* Brings many new readers, but
-* High WTP readers have less reason to subscribe
-
----
-class: font160
-# Paywall Design Choices 
-
-How to best design a paywall? 
-
-* **Quantity choice**: how many free articles per time period? 
-* **Breadth**: How much content (topics) can unsubscribed view?
-* **Temporal Differentiation:** Full access on specified days? Special Issues? 
-* **Porosity**: Should referrals from search engines, social media etc be exempt? 
-
----
-class: font160
-# This paper
-
-**Strategic question**: How does changes in paywall design impact content demand and subscriptions?
-
-* Design choices at play: quantity and breadth
-
-**Why this matters?**
-
-* Want to design effective paywalls 
-* That balance the costs and benefits
-
----
-class: font140
-# The Experiment
-
-**Application**: NYT paywall change in 2013 
-
-**Before**: 
-
-* 10 articles per month via website if unsubscribed
-  * Extra articles if referred 
-* Unlimited from mobile app in "top news" and "video" sections
-
-**After**: 
-
-* Metering mobile app ...
-* 3 articles per day from any section if unsubscribed 
-
-**Control Group**: Subscribed Readers
-
-**Treatment Group**: Unsubscribed Readers
-
-Natural Experiment $\implies$ **Diff-in-Diff**
-
-<!---
-# Paywall Design Space 
-
-```{r, echo = FALSE, fig.align = "center", out.width="80%"}
-url <- "figs/paywall_design_space.png"
-knitr::include_graphics(url)
-```
----> 
-
----
-# (Natural )Experiment
-
-```{r, echo = FALSE, fig.align = "center", out.width="80%"}
-url <- "figs/paywall_experiment.png"
-knitr::include_graphics(url)
-```
-
----
-class: font160
-# Consumption 
-
-```{r, echo = FALSE, fig.align = "center", out.width="80%"}
-url <- "figs/paywall_readership.png"
-knitr::include_graphics(url)
-```
-
-* Consumption declines 
-* Spills over to unaffected browser views
-* Greatest effect on registered but not subscribed 
-  * See table 3 in paper
-
-
----
-class: font140
-# Subscriptions 
-
-```{r, echo = FALSE, fig.align = "center", out.width="100%"}
-url <- "figs/paywall_subscriptions.png"
-knitr::include_graphics(url)
-```
-
-Split consumers into two "types": 
-
-* **Exceed Quantity**: exceeded quota, no interest in previously blocked sections 
-* **More Diverse**: not exceed quota, accessed blocked sections
-
----
-class: font140
-# Takeaways
-
-* **More paywalled content decreases content demand**, with **modest increase in subscriptions** 
-  * Open question: Where did the readers substitute towards? 
-* Back of the envelope calculations suggest this increased revenue
-  * Subscription gain > advertisment loss
-* Suggestive that online content providers should consider a switch away from ad revenue based models 
-  * But I think we need more evidence than this 
-* What's missing in this work? (for me)
-  * Changing two things at once makes it hard to pin down the mechanisms at play 
-  * But the authors weren't in control of the experiment ... 
-
 
 ---
 class: inverse, center, middle
@@ -581,8 +294,7 @@ class: font160
 
 * Online markets provide increased variety which leads to increases in consumer welfare 
 * Prices are more dispersed online, and change more rapidly 
-* Dominant tech platforms' in retail might exploit market power by increasing prices as they gain market share 
-* Designing digital paywalls trades off ad based revenue for subscription revenue 
+* XX
 
 ---
 # License & Citation
@@ -590,11 +302,11 @@ class: font160
 Suggested Citation:
 
 ```{r, engine='out', eval = FALSE}
-@misc{deerdsms2022,
-      title={"Digital and Social Media Strategies: Online Marketplaces"},
+@misc{deerdsms2023,
+      title={"Digital and Social Media Strategies: Online Retail"},
       author={Lachlan Deer},
-      year={2022},
-      url = "https://github.com/tisem-digital-marketing/dsms-lecture-09-onlinemarketplaces"
+      year={2023},
+      url = "https://github.com/deer-marketing-lab/dsms-lecture-onlineretail"
 }
 ```
 
