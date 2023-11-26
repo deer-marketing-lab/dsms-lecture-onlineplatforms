@@ -20,17 +20,50 @@ class: font160
 * Explain how online retailer's variety increases consumer welfare 
 * Assess the magnitude of welfare gains due to online retail 
 * Explain differences in price dispersion online and offline
+* Summarize differences in consumer grocery shopping behaviour online versus offline
+
+---
+class: inverse, center, middle
+
+# Preliminaries
+
+---
+class: font160
+# Where Are We Now? 
+
+Course Themes:
+
+1. Classical Approaches to Measuring Advertising Effects
+2. Modern Evaluation of Digital Advertising Effects
+2. User Generated Content & Social Media
+3. Email & Mobile Marketing
+4. **Issues in (Massive) Online Marketplaces**
+5. ~~Impact of Privacy Regulations~~ 
 
 
 ---
 class: font160
-# Online Markets 
+# Our learning journey... 
+
+.center[.font120[`r icons::fontawesome("rocket", style = "solid")` (Casual) Effects of online retail on consumer and firm behaviour]]
+
+<br>
+
+*Previously*: Mobile (App) Marketing
+
+**Today**: **Effects of Online Retail**
+
+*Next Week*: Issues in Online Platform Markets
+
+---
+class: font160
+# Online Retail 
 
 There is **tonnes** of marketing relevant work exploring online marketplaces 
 
-* There is easily a whole course on this topic 
+* There could easily be a whole course on this topic 
 
-Today we'll look at 4 recent articles that explore current issues in online markets
+Today we'll look at 3 recent articles that explore current issues in online retail
 
 * At the risk of being too selective ...
 * ... But allowing ourselves to understand what's going on 
@@ -40,30 +73,30 @@ Today we'll look at 4 recent articles that explore current issues in online mark
 class: font160
 # Topic Coverage 
 
-Consumer welfare gains from online variety 
+How do consumers benefit from online retail?
 
 * [Quan & Williams (2018)](https://onlinelibrary.wiley.com/doi/abs/10.1111/1756-2171.12255)
 
-Price dispersion in online markets 
+How does price setting behaviour differ between online and offline stores? 
 
 * [Aparcio, Metzman & Rigabon (2021)](https://www.nber.org/papers/w28639)
 
+How does online grocery shopping change consumer choices?
 
-
-
+* [Chintala, Liaukonyte & Yang (2023)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3992849)
 
 ---
 class: inverse, center, middle
 
-# Gains from Online Variety 
+# How do consumers benefit from online retail?
 
 ---
 class: font140
 # Motivation
 
-Online retail $\rightarrow$ increased variety 
+Premise: **Online retail leads to increased variety** 
 
-* **"long-tail effect"**
+* Known as the "Long-tail effect"
 
 ```{r, echo = FALSE, fig.align = "center", out.width="70%"}
 url <- "figs/long_tail.png"
@@ -77,7 +110,7 @@ knitr::include_graphics(url)
 class: font160
 # Testing for Welfare Gains
 
-**Strategic Question**: What is the additional value to consumers created by this increase in variety provided by online retail?
+**Strategic Question**: What is the additional value to consumers created by the increase in variety provided by online retail?
 
 Need to understand:
 
@@ -86,7 +119,7 @@ Need to understand:
 
 **Both** of the above have been **overlooked in previous work** ...
 
-* Which claims (very!) large consumer welfare benefits of online long tails
+* Which claim (very!) large consumer welfare benefits due to online "long" tails
 
 ---
 class: font160
@@ -104,24 +137,26 @@ class: font160
   * We'll stay away from the scary equations
 
 ---
-class: font160
+class: font150
 # Counterfactual Analyis
 
-**Counterfactuals**: Suppose a different world ...
+Suppose there exists different worlds ...
 
   1. Local Assortment targets local demand (tastes)
   2. Local Assortments are standardized
 
-**How?**
+We can simulate these worlds via a model of consumer choices... How?
 
 * Assume estimated demand model is the truth 
 * Create simulated consumers with these preferences 
-* Get them to make choices in different situations 
+* Get them to make choices in different choice ssituations 
 * Compute how much better or worse of they are in each situation 
 
-Compare *consumer surplus* in these situations to 'observed reality'
+Compare consumer welfare in in these situations to 'observed reality'
 
-* Welfare Gain is then: Surplus in "observed reality" minus surplus in one of the different worlds
+* Welfare metric: Consumer Surplus
+
+* Welfare Gain: Surplus in "observed reality" minus surplus in one of the different worlds
 
 
 ---
@@ -181,7 +216,8 @@ class: font150
 ---
 class: inverse, center, middle
 
-# Price Dispersion Online
+# How does price setting behaviour differ between online and offline stores? 
+
 
 ---
 class: font160
@@ -283,6 +319,142 @@ class: font160
 * Prices **change more often online** 
 * ... And **by smaller amounts**
 
+---
+class: inverse, center, middle
+
+# How does online grocery shopping change consumer choices?
+
+---
+class: font150
+# Motivation 
+
+Online shopping has transformed the grocery sector 
+
+* 54% of US households placed an online grocery order in March 2021
+
+**Strategic question**: How do online and offline grocery shopping purchases differ?
+
+Why this matters:
+
+* How to arrange physical and digital shelves
+* Assess the need for different promotional strategies
+
+---
+class: font150
+# Data 
+
+Data from a (US) nationally representative panel
+
+**Offline**: Scanned Receipts
+
+* Each UPC/SKU 
+
+**Online**: (Mainly) Instacart 
+
+* Third party platform $\implies$ consumers buy from retailers via the Instacart
+
+---
+# The Instacart App
+
+.pull-left[
+```{r, echo = FALSE, fig.align = "center", out.width="55%"}
+url <- "https://screenlane.com/media/screenshots/instacart-ios-app-screenshot-4a1efde2.jpg"
+knitr::include_graphics(url)
+```
+]
+.pull-right[
+```{r, echo = FALSE, fig.align = "center", out.width="55%"}
+url <- "https://screenlane.com/media/screenshots/instacart-ios-app-screenshot-b4a7fb1b.jpg"
+knitr::include_graphics(url)
+```
+]
+
+
+---
+class: font160
+# Retailer Concentration
+
+```{r, echo = FALSE, fig.align = "center", out.width="80%"}
+url <- "figs/onlineretail_concentration.png"
+knitr::include_graphics(url)
+```
+
+Expenditure share of the most visited retailer approx 70% higher online compared to offline 
+
+---
+class: font160
+# Variety Effects
+
+.pull-left[
+```{r, echo = FALSE, fig.align = "center", out.width="100%"}
+url <- "figs/onlineretail_variety.png"
+knitr::include_graphics(url)
+```
+]
+.pull-right[
+Across all shopping trips variety of items purchased is:
+
+* 158% lower across all online channels 
+* 91% lower on Instacart 
+* 20% lower when focussing on stores that have an online and offline presence
+]
+
+---
+# Focus on Characteristic Trips
+
+.center[
+**Characteristic Trip**: Routine (large) restocking trips
+]
+
+```{r, echo = FALSE, fig.align = "center", out.width="80%"}
+url <- "figs/onlineretail_characteristictrip.png"
+knitr::include_graphics(url)
+```
+
+.center[Why focus on characteristic trips?]
+<!---Compare trips that are "more similar" to each other--->
+
+---
+class: font120
+# Variety Effects Redux
+
+```{r, echo = FALSE, fig.align = "center", out.width="80%"}
+url <- "figs/onlineretail_basketvariety.png"
+knitr::include_graphics(url)
+```
+Comparing characteristic trips: variety on Instacart is 
+
+* 9.6% lower than offline in terms of categories purchased
+* 14.1% lower than offline in terms of items purchased
+
+---
+class: font160
+# Shopping Basket Similarity
+
+```{r, echo = FALSE, fig.align = "center", out.width="80%"}
+url <- "figs/onlineretail_basketsimilarity.png"
+knitr::include_graphics(url)
+```
+
+Instacart baskets are more similar to each other within a household than their offline shopping baskets
+
+---
+# Changes in Categories Purchased
+
+```{r, echo = FALSE, fig.align = "center", out.width="70%"}
+url <- "figs/onlineretail_categories.png"
+knitr::include_graphics(url)
+```
+
+---
+class: font160
+# Takeaways
+
+Online grocery trips feature: 
+
+* Lower basket variety 
+* More similarity between trips 
+* Less fresh vegetable and less impulse purchases
 
 ---
 class: inverse, center, middle
@@ -294,7 +466,7 @@ class: font160
 
 * Online markets provide increased variety which leads to increases in consumer welfare 
 * Prices are more dispersed online, and change more rapidly 
-* XX
+* Consumer's online grocery trips feature less variety and different purchase categories compared to offline trips
 
 ---
 # License & Citation
