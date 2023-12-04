@@ -1,4 +1,4 @@
-# Digital and Social Media Strategies: Online Retail
+# Digital and Social Media Strategies: Online Platforms
 
 [![lifecycle](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![lifecycle](https://img.shields.io/badge/version-2023-red.svg)]()
@@ -13,7 +13,7 @@
 
 ## Introduction
 
-Slides for the Online Retail lecture of Digital and Social Media Strategies
+Slides for the Online Platforms lecture of Digital and Social Media Strategies
 
 Slides are a xaringan presentation and are built to html and pdf using the Snakemake workflow management system.
 I also manage R's package dependencies with `renv`.
@@ -93,17 +93,17 @@ This will install all the packages we need. It may take a while.
 
 ## Suggested Citation (for the Module)
 
-Deer, Lachlan. 2023. Digital and Social Media Strategies: Online Retail.
+Deer, Lachlan. 2023. Digital and Social Media Strategies: Online Platforms.
 Tilburg University.
-url = "https://github.com/deer-marketing-lab/dsms-lecture-onlineretail"
+url = "https://github.com/deer-marketing-lab/dsms-lecture-onlineplatforms"
 
 ## Suggested Citation (Template)
 
 ```{r, engine='out', eval = FALSE}
 @misc{deerdsms2023,
-      title={"Digital and Social Media Strategies: Online Retail"},
+      title={"Digital and Social Media Strategies: Online Platforms"},
       author={Lachlan Deer},
       year={2023},
-      url = "https://github.com/deer-marketing-lab/dsms-lecture-onlineretail"
+      url = "https://github.com/deer-marketing-lab/dsms-lecture-onlineplatforms"
 }
 ```
